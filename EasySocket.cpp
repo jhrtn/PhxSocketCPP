@@ -1,6 +1,5 @@
 #include "EasySocket.h"
 #include "SocketDelegate.h"
-#include "easylogging++.h"
 #include <iostream>
 #include <thread>
 
@@ -129,7 +128,7 @@ void EasySocket::send(const std::string& message) {
 }
 
 void EasySocket::handleMessage(const std::string& message) {
-    LOG(INFO) << message + "\n";
+    std::cout << message << std::endl;
     this->receiveQueue.enqueue([this, message]() {
         SocketDelegate* d = this->delegate;
         if (d) {
