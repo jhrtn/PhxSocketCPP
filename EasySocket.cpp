@@ -128,7 +128,7 @@ void EasySocket::send(const std::string& message) {
 }
 
 void EasySocket::handleMessage(const std::string& message) {
-    std::cout << message << std::endl;
+    // std::cout << message << std::endl;
     this->receiveQueue.enqueue([this, message]() {
         SocketDelegate* d = this->delegate;
         if (d) {
