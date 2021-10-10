@@ -1,3 +1,6 @@
+This fork is designed to work within OpenFrameworks projects. json.hpp has been removed as it is included within OpenFrameworks as ofJson. EasyLogging has been removed to instead use OF's own logging.
+
+
 * Intro
   PhoenixClient is ready for use with Phoenix Framework v1.0.0. The PhoenixClient enables communication with a phoenix framework web project through the use of channels over websocket.
 
